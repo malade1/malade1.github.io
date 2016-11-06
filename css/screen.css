@@ -23,98 +23,163 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*==== BASE STYLES === */
 
 html {
-  font-size: 1.125em;
-  /* 18px/16*/
-  line-height: 1.222em;
-  /* 22px/18*/
+  font-size: 1.125em; /* 18px/16*/
+  line-height: 1.222em; /* 22px/18*/
   background-color: beige;
+  font-family: Helvetica, Arial, sans-serif;
   color: #222;
+  font-weight : 280;
+  
 }
 
-header {
-  background-color: #8CCAD5;
-  margin-bottom: 1.5em;
-  text-align: center;
-  text-top:0;
+#page {
+  padding: 1.25em 1.25em; /* 22.5px @ 18px em */
 }
 
-h1, h2{
-  font-size: 1.556em;
-  /* 36px */
-  line-height: 1.286em;
-  /* 36px@ 28px */
+#main{
+  width: 1000px;
+  height : 600px;
+  background: red;
+  margin: 25px auto;
+  border : solid 2px #ff3819;
+}
+
+
+
+.mianheader {
+  width: 100%;
+  height: auto;
+  margin: 2% 0;
+  margin: 2% 0 2% 3%;
+  
+}
+
+.mainheader nav{
+  background-color: #666;
+  height: 40px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5pxs;
+   margin: 3% 0 2% 3%;
+   
+}
+
+.mainheader nav ul li{
+  float: left;
+  display: inline:
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+  color: #FFF;
+  display: inline-block;
+  padding: 10px 25px;
+  height: 20px;
+}
+.mainheader nav a:hover, . mainheader nav a:active,
+.mainheader nav .active a:link, .mainheader nav .active a:actived {
+  background-color: #CF5C3F;
+  text-shadow: none;
+}
+a {
+  text-decoration: none;
+}
+
+ p {
+  padding-top: 0.625em;
+  padding-bottom: 1.25em; /* 22.5px : html line-height */
+}
+
+
+h1 {
+  font-size: 1.556em; /* 36px */
+  line-height: 1.286em; /* 36px@ 28px */
   color: purple;
+  text-align: center;
+}
+
+ h2{
+  font-size: 1.556em; /* 36px */
+  line-height: 1.286em; /* 36px@ 28px */
+  color: purple
+  
+ }
+
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 1.25em;
+  margin: 0 auto;
+  
+  
+}
+
+audio{
+    display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 1.25em;
+  margin: 0 auto;
+  height: auto;
+}
+
+
+#links {
+  color: white;
+}
+
+.links-list {
+  list-style: square inside;
+}
+
+.mainFooter{
+    background-color: #666;
+  padding-bottom: 0.75em; /* 22.5px @ 35.159px em */
+  width:100%;
+   padding: 0.25rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* ===== LAYOUT STYLES ===== */
+
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.nav li {
+  float: left;
+  width: 20%;
+  list-style-type: none;
+  padding-bottom: 0;
 }
 
 nav {
-  position: absolute;
-  top: 0;
-   
-
-}
-nav li {
- display: inline-block;
-  list-style-type: none;
-  text-decoration: none;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  padding-top: 1.822em;
-  padding-bottom: 1.8222em;
-
+  font-weight: 200;
 }
 
-nav li a{
+.nav {
   display: block;
-  background-color: #222;
-  color: #EFE5BE;
-
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 0;
 }
 
-
-
-main {
-  margin: auto 1em auto 1em;
+.nav a {
+  display: block;
+  text-align: center;
+  line-height: .5em;
+  padding: 0.556em 0.278em; /* ~ 10px 5px @ 18px/em */
+  background-color: #382243 ;
+  border-bottom: 0;
 }
-
-
 
 section ul {
   border-top: thin solid black;
   text-align: centre;
-}
-
-
-
-#page {
-  padding: 1.222em;
-}
-
-
-
-#page {
-  padding-left: 2.3913%;
-  /*11px margin /460px viewport  = 0.0239130435%*/
-  padding-right: 2.3913%;
-}
-
- #header {
-  padding-top: 3.667em;  /*66px /18px + gridline*/
-
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-audio {
-  width: 100%;
-  height: 100%;
-}
-
-
-footer {
-  color: blue;
 }
 
 li:last-child {
@@ -122,14 +187,41 @@ li:last-child {
 }
 
 
-/*==== LAYOUT STYLES === */
-
-@media screen and (min-width: 61.875em) {
-  #page {
-    margin: 0;
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+  .body{
+    width: 90%;
+    forn-size: 95%;
   }
+  
+  .mianheader img{
+  width: 100%;
+
+   
+  }
+  .mainheader nav{
+
+  height: 160px;
+ 
+}
+.mainheader nav ul{
+  padding-left: 0;
 }
 
-img, audio {
-  border: 0.444em solid blue;
+.mainheader nav ul li{
+ width : 100%;
+ margin 0 auto;
+ text-align: center;
 }
+
+.mainheader nav a:link, .mainheader nav a:visited {
+  padding: 10px 25px;
+  height: 20px;
+  display: block;
+}
+
+ .nav a:hover {
+  background-color: red;
+}
+
+
