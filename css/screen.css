@@ -1,44 +1,33 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
-
-
 /* HTML5 display-role reset for older browsers */
-
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
-  display: block;
+display: block;
 }
-
-
 /*==== BASE STYLES === */
-
 /* Setting type to aa minor third modular scale
 http://www.modularscale.com/?18&&2&web&text
 */
-
 html {
   font-size: 1.125em; /* 18px/16*/
   line-height: 1.222em; /* 22px/18*/
-  background-color: #EFE5BE;
   font-family: Helvetica, Arial, sans-serif;
   color: #222; /* #000 // rgb(0,0,0); */
   background-color: #EEE; /* #FFF */
 }
-
 #page {
   padding: 1.25em 1.25em; /* 22.5px @ 18px em */
 }
-
 h1 {
   font-size: 2.441em; /* 43.945px @ 18px em */
   line-height: 1.536em; /* 67.5px @ 43.945px em */
@@ -46,39 +35,40 @@ h1 {
   padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
   padding-top: 0.512em;
 }
-
 h2 {
   font-size: 1.953em; /* 35.156px @ 18px em */
   line-height: 1.28em; /* 45px @ 35.156px em */
   padding-bottom: 0.75em; /* 22.5px @ 35.159px em */
-  width: 100%; /* add back negative margin value */
+  width: 100%; 
   padding: 0.25rem;
- 
+  border-top: thin solid black;
 }
-
+h4 {
+  font-size: 1.563em; /* 28.125px @ 18px em */
+  line-height: 1.6em; /* 45px @ 28.125px em */
+  padding-bottom: 0.8em; /* 22.5px @ 28.125px em */
+  border-top: thin solid black;
+}
 a {
   text-decoration: none;
 }
-
 p,
 ul {
   padding-top: 0.625em;
   padding-bottom: 1.25em; /* 22.5px : html line-height */
 }
-
-li {
+ul li {
   padding-bottom: 0.625em; /* 11.25px @ 18px em */
+  padding-left: 6.3mem;
 }
-
 img {
   display: block;
   max-height: 100%;
   padding-bottom: 1.25em;
   margin: 0 auto;
 }
-
-audio {
-    display: block;
+  audio {
+  display: block;
   max-height: 100%;
   padding-bottom: 1.25em;
   margin: 0 auto;
@@ -87,158 +77,128 @@ figcaption {
   text-align: center;
   padding-top: -0.3 rem;
 }
-
-
-  
+header {
+  background-color: #8CCAD5;
+  margin-bottom: 1.25em;
+  text-align: center;
+  text-top:0;
+}
 #links {
   color: white;
 }
-
 .links-list {
   list-style: square inside;
 }
-
-
-
 .links-list {
   list-style: square inside;
 }
-
-/* ===== LAYOUT STYLES ===== */
-html {
-  border-top: 2.6875em solid #142736; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
-}
-
-nav {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  /*box-shadow: 0 0.8em 0.4em rgba(0,0,0,0.26); /*The shadow of the navigation bar 14.4px down, 7.2px blur radius*/
-  box-sizing: border-box;
-}
-
 /* ===== MODULAR STYLES ===== */
-
-
-
-  ul li { /* list inside a list */
-  list-style: square inside;
-
-
+ul li { 
+  list-style: square inside; /* the inside list */
 }
-
-
-
-
 nav {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  /*box-shadow: 0 0.8em 0.4em rgba(0,0,0,0.26); /*The shadow of the navigation bar 14.4px down, 7.2px blur radius*/
   box-sizing: border-box;
 }
-
 li:last-child {
   padding-bottom: 0;
 }
-
 .nav li {
   display: block;
   float: left;
   width: 25%;
   list-style-type: none;
   padding-bottom: 0;
-  padding-bottom: 1.25em;
+padding-bottom: 1.25em;
 }
-
 nav {
   font-weight: 200;
 }
-
 .nav {
   display: block;
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 0;
 }
-
 .nav a {
   display: block;
   text-align: center;
   line-height: 1;
-  padding: 0.556em 0.278em; /* ~ 10px 5px @ 18px/em */
-  background-color: blue ;
+  padding: 0.556em 0.278em; /* 10px 5px @ 18px/em */
+  background-color: #8CCAD5;
   color: white;
   border-bottom: 0;
 }
-
+/* ===== LAYOUT STYLES ===== */
+html {
+  border-top: 2.6875em solid #142736; /*  43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+}
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
 .link {
   color: white;
 }
-
-
-
-/* ===== STATE STYLES ===== */
-
 .nav a:hover {
   background-color: red;
 }
-
-
+/* ===== STATE STYLES ===== */
 @media screen and (min-width: 10em) and (max-width: 30em) {
-
   body {
-    font-size: 0.876em;
-    width: 100%;
-  }
-  
-    header {
-    text-align: left;
-    margin-bottom: 1em;
-   }
-
-  h1 {
-    text-align: center;
-    font-size: 2.3em;
-  }
-  
-   img {
-    width: 100%;
-    height: auto;
-  }
-  
-  audio {
-    width: 100%;
-    height: auto;
-  }
-  
-  @media screen and (min-width: 30em) and (max-width: 60em) {
-  body {
-    font-size: 1.1em;
-    width: 100%;
-  }
-
-  header {
-    text-align: left;
-    margin-bottom: 1em;
-    
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 1.85em;
-  }
-  
-    img {
-    width: 100%;
-    height: auto;
-  }
-  
-    audio {
-    width: 100%;
-    height: auto;
-  }
-   
-  }
+  font-size: 0.876em;
+  width: 100%;
+}
+header {
+  text-align: left;
+  margin-bottom: 1em;
+}
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+}
+h4 {
+  text-align: center;
+  display: inline;
+  font-size: 1em;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+audio {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+body {
+  font-size: 1.1em;
+  width: 100%;
+}
+header {
+  text-align: left;
+  margin-bottom: 1em;
+}
+h1 {
+  text-align: center;
+  font-size: 1.85em;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+audio {
+  width: 100%;
+  height: auto;
+}
+h4 {
+  display: inline;
+  font-size: 1em;
+}
+}
