@@ -112,7 +112,7 @@ li:last-child {
   width: 25%;
   list-style-type: none;
   padding-bottom: 0;
-padding-bottom: 1.25em;
+  padding-bottom: 1.25em;
 }
 nav {
   font-weight: 200;
@@ -149,6 +149,19 @@ nav {
 .nav a:hover {
   background-color: red;
 }
+audio {
+  width: 100%;
+  height: auto;
+  padding-top: 0.625em;
+}
+
+header {
+  background-color: #8CCAD5;
+  margin-bottom: 1.25em;
+  text-align: center;
+  text-top:0;
+}
+
 /* ===== STATE STYLES ===== */
 @media screen and (min-width: 10em) and (max-width: 30em) {
   body {
@@ -175,7 +188,16 @@ img {
 audio {
   width: 100%;
   height: auto;
+  padding-top: 0.625em;
 }
+
+header {
+  background-color: #8CCAD5;
+  margin-bottom: 1.25em;
+  text-align: center;
+  text-top:0;
+}
+
 @media screen and (min-width: 30em) and (max-width: 60em) {
 body {
   font-size: 1.1em;
@@ -200,5 +222,11 @@ audio {
 h4 {
   display: inline;
   font-size: 1em;
+}
+header {
+  background-color: #8CCAD5;
+  margin-bottom: 1.25em;
+  text-align: center;
+  text-top:0;
 }
 }
