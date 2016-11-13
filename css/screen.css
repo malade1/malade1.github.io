@@ -83,6 +83,7 @@ header {
   text-align: center;
   text-top:0;
 }
+
 #links {
   color: white;
 }
@@ -188,7 +189,6 @@ img {
 audio {
   width: 100%;
   height: auto;
-  padding-top: 0.625em;
 }
 
 header {
@@ -218,7 +218,7 @@ img {
 audio {
   width: 100%;
   height: auto;
-  padding-top: 0.625em;
+  
 }
 h4 {
   display: inline;
