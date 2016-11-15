@@ -1,18 +1,18 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
-display: block;
+  display: block;
 }
 /*==== BASE STYLES === */
 /* Setting type to aa minor third modular scale
@@ -39,8 +39,8 @@ h2 {
   font-size: 1.953em; /* 35.156px @ 18px em */
   line-height: 1.28em; /* 45px @ 35.156px em */
   padding-bottom: 0.75em; /* 22.5px @ 35.159px em */
-  width: 100%; 
- }
+  width: 100%;
+}
 h4 {
   font-size: 1.563em; /* 28.125px @ 18px em */
   line-height: 1.6em; /* 45px @ 28.125px em */
@@ -63,7 +63,7 @@ img {
   padding-bottom: 1.25em;
   margin: 0 auto;
 }
-  audio {
+audio {
   display: block;
   max-height: 100%;
   padding-bottom: 1.25em;
@@ -77,7 +77,7 @@ header {
   background-color: #8CCAD5;
   margin-bottom: 1.25em;
   text-align: center;
-  text-top:0;
+  text-top: 0;
 }
 
 #links {
@@ -92,20 +92,19 @@ header {
 
 
 /* ===== MODULAR STYLES ===== */
-#education ul{
+#education ul {
   padding-left: 1.25em;
 }
 
-#resume ul{
+#resume ul {
   padding-left: 1.25em;
 }
 
-#content ul{
+#content ul {
   padding-left: 1.25em;
 }
-ul li { 
+ul li {
   list-style: square inside; /* the inside list */
-  
 }
 
 nav {
@@ -124,7 +123,6 @@ li:last-child {
   width: 25%;
   list-style-type: none;
   padding-bottom: 0;
-  padding-bottom: 1.25em;
 }
 nav {
   font-weight: 200;
@@ -180,73 +178,72 @@ header {
 /* ===== STATE STYLES ===== */
 @media screen and (min-width: 10em) and (max-width: 30em) {
   body {
-  font-size: 0.876em;
-  width: 100%;
-}
-header {
-  text-align: left;
-  margin-bottom: 1em;
-  padding-bottom: 1.25em;
-}
-h1 {
-  text-align: center;
-  font-size: 2.3em;
-}
-h4 {
-  text-align: center;
-  display: inline;
-  font-size: 1em;
-}
-img {
-  width: 100%;
-  height: auto;
-}
-audio {
-  width: 100%;
-  height: auto;
-  padding-top: 0.625em;
-}
+    font-size: 0.876em;
+    width: 100%;
+  }
+  header {
+    text-align: left;
+    margin-bottom: 1em;
+    padding-bottom: 1.25em;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.3em;
+  }
+  h4 {
+    text-align: center;
+    display: inline;
+    font-size: 1em;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  audio {
+    width: 100%;
+    height: auto;
+    padding-top: 0.625em;
+  }
 
-header {
-  background-color: #8CCAD5;
-  margin-bottom: 1.25em;
-  text-align: center;
-  padding-bottom: 1.25em;
-  text-top:0;
-}
+  header {
+    background-color: #8CCAD5;
+    margin-bottom: 1.25em;
+    text-align: center;
+    padding-bottom: 1.25em;
+    text-top: 0;
+  }
 
-@media screen and (min-width: 30em) and (max-width: 60em) {
-body {
-  font-size: 1.1em;
-  width: 100%;
-}
-header {
-  text-align: left;
-  margin-bottom: 1em;
-  padding-bottom: 1.25em;
-}
-h1 {
-  text-align: center;
-  font-size: 1.85em;
-}
-img {
-  width: 100%;
-  height: auto;
-}
-audio {
-  width: 100%;
-  height: auto;
-  padding-top: 0.625em;
-  
-}
-h4 {
-  display: inline;
-  font-size: 1em;
-}
-header {
-  background-color: #8CCAD5;
-  margin-bottom: 1.25em;
-  text-align: center;
-  text-top:0;
-}
+  @media screen and (min-width: 30em) and (max-width: 60em) {
+    body {
+      font-size: 1.1em;
+      width: 100%;
+    }
+    header {
+      text-align: left;
+      margin-bottom: 1em;
+      padding-bottom: 1.25em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.85em;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    audio {
+      width: 100%;
+      height: auto;
+      padding-top: 0.625em;
+    }
+    h4 {
+      display: inline;
+      font-size: 1em;
+    }
+    header {
+      background-color: #8CCAD5;
+      margin-bottom: 1.25em;
+      text-align: center;
+    }
+  }
 }
