@@ -46,7 +46,6 @@ h2 {
 h4 {
   font-size: 1.563em; /* 28.125px @ 18px em */
   line-height: 1.6em; /* 45px @ 28.125px em */
-
   border-top: thin solid black;
 }
 a {
@@ -94,14 +93,24 @@ header {
   list-style: square inside;
 }
 
- .childcontent{
-  padding-top: 1.25em;
-}
 
 /* ===== MODULAR STYLES ===== */
+#education ul{
+  padding-left: 1.25em;
+}
+
+#resume ul{
+  padding-left: 1.25em;
+}
+
+#content ul{
+  padding-left: 1.25em;
+}
 ul li { 
   list-style: square inside; /* the inside list */
+  
 }
+
 nav {
   position: absolute;
   width: 100%;
@@ -167,6 +176,7 @@ header {
   background-color: #8CCAD5;
   margin-bottom: 1.25em;
   text-align: center;
+  padding-bottom: 1.25em;
   text-top: 0;
 }
 
@@ -179,6 +189,7 @@ header {
 header {
   text-align: left;
   margin-bottom: 1em;
+  padding-bottom: 1.25em;
 }
 h1 {
   text-align: center;
@@ -196,12 +207,14 @@ img {
 audio {
   width: 100%;
   height: auto;
+  padding-top: 0.625em;
 }
 
 header {
   background-color: #8CCAD5;
   margin-bottom: 1.25em;
   text-align: center;
+  padding-bottom: 1.25em;
   text-top:0;
 }
 
@@ -213,6 +226,7 @@ body {
 header {
   text-align: left;
   margin-bottom: 1em;
+  padding-bottom: 1.25em;
 }
 h1 {
   text-align: center;
@@ -225,6 +239,7 @@ img {
 audio {
   width: 100%;
   height: auto;
+  padding-top: 0.625em;
   
 }
 h4 {
