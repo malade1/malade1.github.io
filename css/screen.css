@@ -40,13 +40,10 @@ h2 {
   line-height: 1.28em; /* 45px @ 35.156px em */
   padding-bottom: 0.75em; /* 22.5px @ 35.159px em */
   width: 100%; 
-  padding: 0.25em;
-  border-top: thin solid black;
-}
+ }
 h4 {
   font-size: 1.563em; /* 28.125px @ 18px em */
   line-height: 1.6em; /* 45px @ 28.125px em */
-  border-top: thin solid black;
 }
 a {
   text-decoration: none;
