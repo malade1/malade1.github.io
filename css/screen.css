@@ -40,13 +40,13 @@ h2 {
   line-height: 1.28em; /* 45px @ 35.156px em */
   padding-bottom: 0.75em; /* 22.5px @ 35.159px em */
   width: 100%; 
-  padding: 0.25rem;
+  padding: 0.25em;
   border-top: thin solid black;
 }
 h4 {
   font-size: 1.563em; /* 28.125px @ 18px em */
   line-height: 1.6em; /* 45px @ 28.125px em */
-  padding-bottom: 0.8em; /* 22.5px @ 28.125px em */
+
   border-top: thin solid black;
 }
 a {
@@ -59,8 +59,8 @@ ul {
 }
 ul li {
   padding-bottom: 0.625em; /* 11.25px @ 18px em */
-  padding-left: 6.3mem;
 }
+
 img {
   display: block;
   max-height: 100%;
@@ -93,6 +93,11 @@ header {
 .links-list {
   list-style: square inside;
 }
+
+ .childcontent{
+  padding-top: 1.25em;
+}
+
 /* ===== MODULAR STYLES ===== */
 ul li { 
   list-style: square inside; /* the inside list */
@@ -133,6 +138,7 @@ nav {
   color: white;
   border-bottom: 0;
 }
+
 /* ===== LAYOUT STYLES ===== */
 html {
   border-top: 2.6875em solid #142736; /*  43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
@@ -151,16 +157,17 @@ nav {
   background-color: red;
 }
 audio {
-  width: 100%;
+  width: 45%;
   height: auto;
   padding-top: 0.625em;
+  padding-bottom: 1.25em;
 }
 
 header {
   background-color: #8CCAD5;
   margin-bottom: 1.25em;
   text-align: center;
-  text-top:0;
+  text-top: 0;
 }
 
 /* ===== STATE STYLES ===== */
